@@ -1,4 +1,4 @@
-fruit = {
+@fruit = {
   :pear => { 
     :img => "http://www.clipartbest.com/cliparts/MTL/GeR/MTLGeRXac.png",
     :pun => "Choking on fruit? Call the pear-emetics."
@@ -14,8 +14,17 @@ fruit = {
   :lime => {
     :img => "http://2.bp.blogspot.com/-0gWLONYqsjc/T41b1xD31KI/AAAAAAAAB18/9NXti9aRL2A/s320/Lime.png",
     :pun => "Put a citrus fruit on top of your drink: It will taste sub lime."
+  },
+  :apple => {
+    :img => "",
+    :pun => ""
+  },
+  :grapes => {
+    :img => "",
+    :pun => ""
   }
 }
+
 random = rand(1..fruit.length)
 if random == 1
   @chosen_fruit = fruit[:pear]
@@ -28,3 +37,4 @@ elsif random == 4
 end
 @fruit_img = @chosen_fruit[:img]
 @fruit_pun = @chosen_fruit[:pun]   
+
