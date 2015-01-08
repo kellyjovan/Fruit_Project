@@ -1,5 +1,6 @@
 body{
   font-family: 'Indie Flower', cursive;
+  background-color:orange;
 }
 h1{
   font-size: 56px;
@@ -14,4 +15,5 @@ img{
 }
 .home{
   text-align: center;
+  box-shadow: red;
 }
