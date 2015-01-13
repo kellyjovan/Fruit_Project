@@ -30,4 +30,8 @@ class MyApp < Sinatra::Base
   get "/results" do
     erb :results
   end
+
+  get "/apple_result" do
+    erb :apple_result
+  end
 end
