@@ -1,6 +1,6 @@
 require 'bundler'
 Bundler.require
-require_relative 'models/tweet.rb'
+require_relative 'models/fruit.rb'
 
 class MyApp < Sinatra::Base
 
@@ -13,19 +13,21 @@ class MyApp < Sinatra::Base
   end
 
   post '/questions' do
+    score = Fruits_score.new()
+    score.name = params[:name]
     if params[:fav_color] == "red"
-      @apple += 1
+      score.apple
     elsif params[:fav_color] == "green"
-      @limes += 1
+      score.lime
     elsif params[:fav_color] == "orange"
-      @orange += 1
+      score.orange
     elsif params[:fav_color] == "purple"
-      @grapes += 1
+      score.grape
     end
     redirect("/results")
   end
 
   get "/results" do
-   
+    erb :results
   end
 end
