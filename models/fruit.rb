@@ -1,22 +1,22 @@
 class Fruits_score
-  attr_accessor :name
+  attr_accessor :name, :apple, :grape, :lime, :orange
   def initialize
-    @apple  = 0
-    @grape  = 0
-    @lime   = 0
-    @orange = 0
+    self.apple  = 0
+    self.grape  = 0
+    self.lime   = 0
+    self.orange = 0
   end
-  def apple 
-    @apple += 1;
+  def apple_point
+    self.apple += 1
   end
-  def @grape 
-    @grape += 1;
+  def grape_point
+    self.grape += 1
   end
-  def @lime
-    @lime += 1;
+  def lime_point
+    self.lime += 1
   end
-  def @orange
-    @orange += 1;
+  def orange_point
+    self.orange += 1
   end
 end
 

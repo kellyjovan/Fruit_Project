@@ -38,6 +38,7 @@ $(document).ready(function(){
       color = randFruit["color"],
       img = randFruit["img"];
 
-  $('#fruit').src(img);
+  var fruit_img  = $('#fruit').attr("src");
+  fruit_img = img
   $('#pun').text(pun);
 });

@@ -16,15 +16,19 @@ class MyApp < Sinatra::Base
     score = Fruits_score.new()
     score.name = params[:name]
     if params[:fav_color] == "red"
-      score.apple
+      score.apple_point
     elsif params[:fav_color] == "green"
-      score.lime
+      score.lime_point
     elsif params[:fav_color] == "orange"
-      score.orange
+      score.orange_point
     elsif params[:fav_color] == "purple"
-      score.grape
+      score.grape_point
     end
-    redirect("/results")
+    if score.apple > 0
+      redirect("/apple_result");
+    else
+      redirect("/results")
+    end
   end
 
   get "/results" do
