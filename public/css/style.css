@@ -19,8 +19,9 @@ input{
   display: inline-block;
 }
 .box{
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 450px;
+  border-radius:10px;
 }
 .red{
   background-color: red;
