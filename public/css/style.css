@@ -18,3 +18,19 @@ img{
 input{
   display: inline-block;
 }
+.box{
+  height: 200px;
+  width: 300px;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.orange{
+  background-color: orange;
+}
+.purple{
+  background-color: purple;
+}
