@@ -7,25 +7,84 @@
   <link href="../public/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  
-  <div class="container home">
+  <div class="container">
     <form action="/questions" method="POST">
-      <p>What is Your Name?</p>
-      <input type="text" name="name" placeholder="name">
-      <p>What is Your Favorite Color?</p>
-      <input type="radio" name="fav_color" value="red">
-      <p>red</p>
-      <input type="radio" name="fav_color" value="purple">
-      <p>purple</p>
-      <input type="radio" name="fav_color" value="green">
-      <p>green</p>
-      <input type="radio" name="fav_color" value="orange">
-      <p>orange</p>
-      <p>Question 3</p>
-      <input type="radio">
-      <input type="submit">
-    </form>
-  </div>
+      <div class="form-group">
+        <label for="Name">What is Your Name?</label>
+        <input type="text" class="form-control" id="name_input" placeholder="Enter Your Name">
+      </div>
+      <label>What is Your Favorite Color?</lablel>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fav_color" value="red" checked>
+            Red
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fav_color" value="purple">
+            Purple
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fav_color" value="green">
+            Green
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fav_color" value="orange">
+            Orange
+          </label>
+        </div>
+        <lable>Are You a Optimist, Pessimist, or Neutral?</lable>
+        <div class="radio">
+          <label>
+          <input type="radio" name="type" value="optimist" checked>
+            Optimist
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="type" value="Pessimist">
+            Pessimist
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="type" value="Neutral">
+            Neutral
+          </label>
+        </div>
+        <label>What Animal Do You Like?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="lizard" checked>
+            Lizard
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="dog">
+            Dog
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="cat">
+            Cat
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="bear">
+            Bear
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
 
-</body>
-</html>
+  </body>
+  </html>

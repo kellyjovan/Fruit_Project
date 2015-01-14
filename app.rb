@@ -24,7 +24,9 @@ class MyApp < Sinatra::Base
     elsif params[:fav_color] == "purple"
       score.grape_point
     end
-    if score.apple > 0
+    scores = {:apple => score.apple, :lime => score.lime, :orange => score.orange, :grape => score.grape};
+    scores.sort_by {|k,v| v}.reverse
+    if score.last == 
       redirect("/apple_result");
     else
       redirect("/results")
