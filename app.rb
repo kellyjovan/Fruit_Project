@@ -19,10 +19,13 @@ class MyApp < Sinatra::Base
       score.apple_point
       puts score.apple
     elsif params[:fav_color] == "green"
+      puts score.apple
       score.lime_point
     elsif params[:fav_color] == "orange"
+      puts score.apple
       score.orange_point
     elsif params[:fav_color] == "purple"
+      puts score.apple
       score.grape_point
     end
 
@@ -30,13 +33,14 @@ class MyApp < Sinatra::Base
       puts score.apple
       redirect("/apple_result")
     elsif score.lime > score.apple && score.lime > score.orange && score.lime > score.grape
+      puts score.lime
       redirect("/lime_results")
     elsif score.orange > score.apple && score.lime > score.orange && score.lime > score.lime
+      puts score.orange
       redirect("/orange_results")
     elsif score.grape > score.apple && score.lime > score.lime && score.lime > score.orange
-      redirect("/grape_results");
-    else
-      redirect("results")
+      puts score.grape
+      redirect("/grape_results")
     end
   end
 
@@ -46,5 +50,17 @@ class MyApp < Sinatra::Base
 
   get "/apple_result" do
     erb :apple_result
+  end
+
+  get "/lime_results" do 
+    erb :lime_results
+  end
+
+  get "/orange_results" do
+    erb :orange_results 
+  end
+
+  get "/grape_results" do
+    erb :grape_results
   end
 end
