@@ -15,6 +15,15 @@ class MyApp < Sinatra::Base
   post '/questions' do
     score = Fruits_score.new()
     score.name = params[:name]
+
+    def score_each
+      params.each do |param|
+        
+      end
+    end
+
+    score_each
+
     if params[:fav_color] == "red"
       score.apple_point
       puts score.apple

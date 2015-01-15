@@ -19,4 +19,3 @@ class Fruits_score
     self.orange += 1
   end
 end
-
