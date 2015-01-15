@@ -35,10 +35,10 @@ class MyApp < Sinatra::Base
     elsif score.lime > score.apple && score.lime > score.orange && score.lime > score.grape
       puts score.lime
       redirect("/lime_results")
-    elsif score.orange > score.apple && score.lime > score.orange && score.lime > score.lime
+    elsif score.orange > score.apple && score.orange > score.grape && score.orange > score.lime
       puts score.orange
       redirect("/orange_results")
-    elsif score.grape > score.apple && score.lime > score.lime && score.lime > score.orange
+    elsif score.grape > score.apple && score.grape > score.lime && score.grape > score.orange
       puts score.grape
       redirect("/grape_results")
     end
