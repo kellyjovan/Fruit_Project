@@ -31,6 +31,14 @@ class MyApp < Sinatra::Base
           puts "Orange n Grape"
           score.orange_point
           score.grape_point
+        elsif apple_choices.include?(v) && orange_choices.include?(v)
+          puts "Apple n Orange"
+          score.apple_point
+          score.orange_point
+        elsif lime_choices.include?(v) && grape_choices.include?(v)
+          puts "Lime n Grape"
+          score.lime_point
+          score.grape_point
         elsif apple_choices.include?(v)
           puts "Apple"
           score.apple_point
