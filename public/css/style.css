@@ -1,6 +1,12 @@
 body{
   font-family: 'Indie Flower', cursive;
+  padding: 1.5em 0;
 }
+
+body{
+  background: #000; 
+}
+
 .fruit{
   border: double black 10px;
   position: fixed;
@@ -34,4 +40,26 @@ input{
 }
 .purple{
   background-color: purple;
+}
+section{
+  margin: 2em 0;
+  padding: 1.5em;
+  border-radius: .5em;
+}
+section:nth-of-type(odd){
+  background: #e6e6e6; 
+}
+
+section:nth-of-type(even){
+  background: #fff; 
+}
+.header h1{
+  font-size: 60px ;
+  color: #FFF;
+  font-weight: bolder;
+}
+button{
+  height: 60px;
+  width: 100%;
+  font-size: 30px;
 }

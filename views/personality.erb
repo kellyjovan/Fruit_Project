@@ -9,42 +9,47 @@
 <body>
   <div class="container">
     <form action="/questions" method="POST">
-      <div class="form-group">
-        <center><label><h2>What is Your Name?</h2></label></center>
-        <input type="text" class="form-control" id="name_input" placeholder="Enter Your Name">
-      </div>
+      <center><label class="header"><h1>Wha'cha Pearsonality?</h1></label></center>
+      <section>
+        <div class="form-group">
+          <center><label><h2>What is Your Name?</h2></label></center>
+          <input type="text" class="form-control" id="name_input" placeholder="Enter Your Name">
+        </div>
+      </section>
 
-      <center><label><h2>What is Your Favorite Color?</h2></lablel></center>
-      <div class="row">
-        <div class="radio col-md-6">
-          <label>
-            <input type="radio" name="fav_color" value="red" checked>
-            <div class="box red"></div>
-          </label>
+      <section>
+        <center><label><h2>What is Your Favorite Color?</h2></lablel></center>
+        <div class="row">
+          <div class="radio col-md-6">
+            <label>
+              <input type="radio" name="fav_color" value="red" checked>
+              <div class="box red"></div>
+            </label>
+          </div>
+          <div class="radio col-md-6">
+            <label>
+              <input type="radio" name="fav_color" value="purple">
+              <div class="box purple"></div>
+            </label>
+          </div>
         </div>
-        <div class="radio col-md-6">
-          <label>
-            <input type="radio" name="fav_color" value="purple">
-            <div class="box purple"></div>
-          </label>
+        <div class="row">
+          <div class="radio col-md-6">
+            <label>
+              <input type="radio" name="fav_color" value="green">
+              <div class="box green"></div>
+            </label>
+          </div>
+          <div class="radio col-md-6">
+            <label>
+              <input type="radio" name="fav_color" value="orange">
+              <div class="box orange"></div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="radio col-md-6">
-          <label>
-            <input type="radio" name="fav_color" value="green">
-            <div class="box green"></div>
-          </label>
-        </div>
-        <div class="radio col-md-6">
-          <label>
-            <input type="radio" name="fav_color" value="orange">
-            <div class="box orange"></div>
-          </label>
-        </div>
-      </div>
-
-      <center><lable><h2>Are You a Optimist, Pessimist, or Neutral?</h2></lable></center>
+      </section>
+      <section>
+      <center><lable><h2>Are You a Optimist or Pessimist</h2></lable></center>
       <div class="row">
         <div class="radio col-md-6">
           <label>
@@ -61,19 +66,20 @@
           </label>
         </div>
       </div>
-
+      </section>
+      <section>
       <center><label><h2>What Creature Do You Like?</h2></label></center>
       <div class="row">
         <div class="radio col-md-6">
           <label>
-            <input type="radio" name="animal" value="lizard" checked>
+            <input type="radio" name="animal" value="unicorn" checked>
             <img src="http://a.tgcdn.net/images/products/additional/large/1107_unicorn_head_mask_inuse.jpg" class="box"/>
             <center><h2>Unicorn</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
-            <input type="radio" name="animal" value="dog">
+            <input type="radio" name="animal" value="godzilla">
             <img src="http://cdn.pastemagazine.com/www/blogs/lists/23-Godzilla-Kaiju-Minilla.jpg" class="box"/>
             <center><h2>Godzilla</h2></center>
           </label>
@@ -82,67 +88,53 @@
       <div class="row">
         <div class="radio col-md-6">
           <label>
-            <input type="radio" name="animal" value="cat">
+            <input type="radio" name="animal" value="king_kong">
             <img src="http://www.combogamer.com/wp-content/uploads/2014/11/King-Kong-1933-2.jpg" class="box"/>
             <center><h2>King Kong</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
-            <input type="radio" name="animal" value="bear">
+            <input type="radio" name="animal" value="willy">
             <img src="http://cdn.dstv.com/mms.dstv.com/content/images/dstv/201011/lg/bom_freewilly.jpg" class="box"/>
             <center><h2>Willy</h2></center>
           </label>
         </div>
       </div>
-
+      </section>
+      <section>
       <center><label><h2>What is Your Favorite Taste?</h2></label></center>
       <div class="row"> 
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="taste" value="sweet" checked>
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2013/05/sweet-tooth.jpg" class="box"/>
             <center><h2>Sweet</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="taste" value="salty">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
-            <center><h2>Salty</h2></center>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="radio col-md-6">
-          <label>
-            <input type="radio" name="taste" value="Sour">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.funnycommercialsworld.com/wp-content/uploads/2012/12/sour-candy.jpg" class="box"/>
             <center><h2>Sour</h2></center>
           </label>
         </div>
-        <div class="radio col-md-6">
-          <label>
-            <input type="radio" name="taste" value="bitter">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
-            <center><h2>Bitter</h2></center>
-          </label>
-        </div>
       </div>
-
+      </section>
+      <section>
       <div class="row"> 
         <center><label><h2>What is Your Favorite Genre?</h2></label></center>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="genre" value="Action" checked>
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.top5bin.com/wp-content/uploads/2013/03/action-movie.jpg" class="box"/>
             <center><h2>Action</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="genre" value="comedy">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="https://pbs.twimg.com/profile_images/1116119597/funny_face.jpg" class="box"/>
             <center><h2>Comedy</h2></center>
           </label>
         </div>
@@ -151,25 +143,26 @@
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="genre" value="romance">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.100bestdesign.com/wp-content/uploads/2013/03/14-100-Best-HD-Love-Romance-and-Heart-Wallpapers-Design.jpg" class="box"/>
             <center><h2>Romance</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="genre" value="horror">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.hdwallpapersnew.net/wp-content/uploads/2014/11/horror-hd-wallpaper-for-desktop-free-movie-images.jpg" class="box"/>
             <center><h2>Horror</h2></center>
           </label>
         </div>
       </div>
-
+      </section>
+      <section>
       <div class="row"> 
         <center><label><h2>What is Your Favorite Subject?</h2></label></center>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="subject" value="math" checked>
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.thestar.com/content/dam/thestar/opinion/editorials/2013/12/06/teach_ontario_kids_the_joy_of_math_editorial/math.jpg" class="box"/>
             <center><h2>Math</h2></center>
           </label>
         </div>
@@ -197,20 +190,21 @@
           </label>
         </div>
       </div>
-
+      </section>
+      <section>
       <center><label><h2>What is Your Dream Job?</h2></label></center>
       <div class="row"> 
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="job" value="fire_fighter" checked>
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.learyfirefighters.org/wp-content/uploads/2013/09/cover-slide-1.jpg" class="box"/>
             <center><h2>Fire Fighter</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="job" value="musician">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.publicdomainpictures.net/pictures/10000/nahled/2185-1265518314fFC8.jpg" class="box"/>
             <center><h2>Musician</h2></center>
           </label>
         </div>
@@ -219,32 +213,33 @@
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="job" value="teacher">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.slate.com/content/dam/slate/articles/health_and_science/dismal%20science/07/120724_DS_TEACHER.jpg.CROP.rectangle3-large.jpg" class="box"/>
             <center><h2>Teacher</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="job" value="wrestler">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://i.telegraph.co.uk/multimedia/archive/01633/sumo-wrestlers_1633119a.jpg" class="box"/>
             <center><h2>Wrestler</h2></center>
           </label>
         </div>
       </div>
-
+      </section>
+      <section>
       <center><label><h2>What is Kind of Car Do You Like?</h2></label></center>
       <div class="row"> 
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="car" value="cheap" checked>
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://cheap-cars.stackpoint.com/files/2010/06/cheap-car.jpg" class="box"/>
             <center><h2>Cheap and Affordable</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="car" value="fast">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://cdn3.howtogeek.com/wp-content/uploads/2010/02/02fastcars.jpg" class="box"/>
             <center><h2>Fast and Furious</h2></center>
           </label>
         </div>
@@ -253,32 +248,33 @@
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="car" value="broken">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.asergeev.com/pictures/archives/2006/491/jpeg/22.jpg" class="box"/>
             <center><h2>Broken and Pulpy</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
-            <input type="radio" name="car" value="sturdy">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
-            <center><h2>Sturdy and Reliable</h2></center>
+            <input type="radio" name="car" value="truck">
+            <img src="http://commercial-trucks-for-sale.com/commercial-trucks-for-sale-harley-davidson-truck.jpg" class="box"/>
+            <center><h2>Truck</h2></center>
           </label>
         </div>
       </div>
-
+      </section>
+      <section>
       <center><label><h2>What Superpower Would You Like?</h2></label></center>
       <div class="row"> 
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="power" value="laser" checked>
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://images.sodahead.com/polls/001698505/1757834824_laser_eyes_babies_16_answer_4_xlarge.jpeg" class="box"/>
             <center><h2>Laser Eyes</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="power" value="invisibility">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.blacklistednews.com/images/Harry-Potter-Style-Invisibility-Cloak-Prototype-Created-by-Scientists.jpg" class="box"/>
             <center><h2>Invisibility</h2></center>
           </label>
         </div>
@@ -287,32 +283,33 @@
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="power" value="flight">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://images.christianpost.com/full/76484/ermac-beneto-fan-art.jpg" class="box"/>
             <center><h2>Flight</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="power" value="door">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="images/Doorman_h.jpg" class="box"/>
             <center><h2>Become a Door</h2></center>
           </label>
         </div>
       </div>
-
+      </section>
+      <section>
       <center><label><h2>How Would You Describe Yourself?</h2></label></center>
       <div class="row"> 
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="describe" value="average" checked>
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.1450thehall.com/images/featured_image/0/paired_modules/5/1355772950_stretch.png" class="box"/>
             <center><h2>An Average Joe</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="describe" value="cool">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://cdn.attackofthecute.com/May-15-2012-01-49-17-sfgvdf.jpeg" class="box"/>
             <center><h2>A Cool Cat</h2></center>
           </label>
         </div>
@@ -321,32 +318,33 @@
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="describe" value="extreme">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://i.telegraph.co.uk/multimedia/archive/02662/extreme3_2662527b.jpg" class="box"/>
             <center><h2>Exxxxtreme</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="describe" value="worthless">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.printed-editions.com/upload/standard/_Banksy_Because_Im_Worthless_Pink_82.jpeg" class="box"/>
             <center><h2>Worthless</h2></center>
           </label>
         </div>
       </div>
-
+      </section>
+      <section>
       <center><label><h2>What Do You Do in Your Free Time?</h2></label></center>
       <div class="row"> 
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="free_time" value="read" checked>
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://4.bp.blogspot.com/-EWENIpCJnCw/U5eoTrQKxyI/AAAAAAAAAhw/yzvowEgenrc/s1600/Yoda-reading-small.png" class="box"/>
             <center><h2>Read</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="free_time" value="sports">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.sportsfail.com/wp-content/uploads/2014/03/funny_sports_fail_4.jpg" class="box"/>
             <center><h2>Play Sports</h2></center>
           </label>
         </div>
@@ -355,18 +353,19 @@
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="free_time" value="chill">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://www.mwpr.ca/articles/articles_2630/Chill_Cone_person.jpg" class="box"/>
             <center><h2>Chill</h2></center>
           </label>
         </div>
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="free_time" value="bully">
-            <img src="http://placehold.it/300x300/cdcdcd" class="box"/>
+            <img src="http://ponderthisawhile.com/wp-content/uploads/2014/04/bully.jpg" class="box"/>
             <center><h2>Bully Others</h2></center>
           </label>
         </div>
       </div>
+      </section>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </div>
