@@ -50,10 +50,10 @@ class MyApp < Sinatra::Base
       puts "Key: #{k}"
       puts "Value: #{v}"
       end
-      # puts "Apple: #{score.apple}"
-      # puts "Lime: #{score.lime}"
-      # puts "Orange: #{score.orange}"
-      # puts "Grape: #{score.grape}"
+      puts "Apple: #{score.apple}"
+      puts "Lime: #{score.lime}"
+      puts "Orange: #{score.orange}"
+      puts "Grape: #{score.grape}"
     end
 
     score_each(score)
