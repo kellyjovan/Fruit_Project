@@ -17,10 +17,10 @@ class MyApp < Sinatra::Base
     @name = params[:name]
 
     def score_each(score)
-      apple_choices  = ["red", "optimist", "unicorn", "sweet", "action", "math", "fire_fighter", "cheap", "laser", "average", "read"]
-      lime_choices   = ["green", "optimist", "godzilla", "sour", "horror", "science", "wrestler", "fast", "flight", "extreme", "sports"]
-      orange_choices = ["orange", "pessimist", "king_kong", "sweet", "romance", "ela", "teacher", "broken", "door", "worthless", "bully"]
-      grape_choices  = ["purple", "pessimist", "willy", "sour", "comedy", "social", "musician", "truck", "invisibility", "cool", "chill"]
+      apple_choices  = ["red", "optimist", "unicorn", "sweet", "action", "math", "fire_fighter", "cheap", "laser", "average", "read", "love"]
+      lime_choices   = ["green", "optimist", "godzilla", "sour", "horror", "science", "wrestler", "fast", "flight", "extreme", "sports", "fame"]
+      orange_choices = ["orange", "pessimist", "king_kong", "sweet", "romance", "ela", "teacher", "broken", "door", "worthless", "bully", "domination"]
+      grape_choices  = ["purple", "pessimist", "willy", "sour", "comedy", "social", "musician", "truck", "invisibility", "cool", "chill", "money"]
 
       params.each do |k,v|
         if apple_choices.include?(v) && lime_choices.include?(v)
