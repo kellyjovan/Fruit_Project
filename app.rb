@@ -41,12 +41,12 @@ class MyApp < Sinatra::Base
           score.grape_point
         elsif grape_choices.include?(v) && lime_choices.include?(v)
           puts "Orange n Grape"
-          score.orange_point
+          score.lime_point
           score.grape_point
         elsif lime_choices.include?(v) && orange_choices.include?(v)
           puts "Lime n Grape"
           score.lime_point
-          score.grape_point
+          score.orange_point
         elsif apple_choices.include?(v)
           puts "Apple"
           score.apple_point
