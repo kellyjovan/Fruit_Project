@@ -17,25 +17,33 @@ class MyApp < Sinatra::Base
     @name = params[:name]
 
     def score_each(score)
-      apple_choices  = ["red", "optimist", "unicorn", "sweet", "action", "math", "fire_fighter", "cheap", "laser", "average", "read", "love"]
-      lime_choices   = ["green", "optimist", "godzilla", "sour", "horror", "science", "wrestler", "fast", "flight", "extreme", "sports", "fame"]
-      orange_choices = ["orange", "pessimist", "king_kong", "sweet", "romance", "ela", "teacher", "broken", "door", "worthless", "bully", "domination"]
-      grape_choices  = ["purple", "pessimist", "willy", "sour", "comedy", "social", "musician", "truck", "invisibility", "cool", "chill", "money"]
+      apple_choices  = ["red", "optimist", "unicorn", "sweet", "action", "math", "fire_fighter", "cheap", "laser", "average", "read", "love", "future"]
+      lime_choices   = ["green", "optimist", "godzilla", "sour", "horror", "science", "wrestler", "fast", "flight", "extreme", "sports", "fame", "future"]
+      orange_choices = ["orange", "pessimist", "king_kong", "sour", "romance", "ela", "teacher", "broken", "door", "worthless", "bully", "domination", "past"]
+      grape_choices  = ["purple", "pessimist", "willy", "sweet", "comedy", "social", "musician", "truck", "invisibility", "cool", "chill", "money", "past"]
 
       params.each do |k,v|
         if apple_choices.include?(v) && lime_choices.include?(v)
           puts "Apple n Lime"
           score.apple_point
           score.lime_point
-        elsif orange_choices.include?(v) && grape_choices.include?(v)
-          puts "Orange n Grape"
-          score.orange_point
-          score.grape_point
         elsif apple_choices.include?(v) && orange_choices.include?(v)
           puts "Apple n Orange"
           score.apple_point
           score.orange_point
-        elsif lime_choices.include?(v) && grape_choices.include?(v)
+        elsif apple_choices.include?(v) && grape_choices.include?(v)
+          puts "Apple n Orange"
+          score.apple_point
+          score.grape_point
+        elsif grape_choices.include?(v) && orange_choices.include?(v)
+          puts "Orange n Grape"
+          score.orange_point
+          score.grape_point
+        elsif grape_choices.include?(v) && lime_choices.include?(v)
+          puts "Orange n Grape"
+          score.orange_point
+          score.grape_point
+        elsif lime_choices.include?(v) && orange_choices.include?(v)
           puts "Lime n Grape"
           score.lime_point
           score.grape_point
@@ -92,6 +100,8 @@ class MyApp < Sinatra::Base
     elsif score.grape > score.apple && score.grape > score.lime && score.grape > score.orange
       puts score.grape
       redirect("/grape_results")
+    else
+      redirect("/results");
     end
   end
 
